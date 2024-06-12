@@ -3,4 +3,9 @@
     <mat-icon>menu</mat-icon>
   </button>
   <span class="example-spacer"></span>
+  <p *ngIf="isLogged">user: <span> {{userName}} </span></p>
+  <button *ngIf="isLogged" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+    (click)="logout()">
+    <mat-icon>logout</mat-icon>
+  </button>
 </mat-toolbar>

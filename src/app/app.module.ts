@@ -15,6 +15,7 @@ import { HeaderComponent } from 'src/app/components/main-layout/header/header.co
 import { MainLayoutComponent } from 'src/app/components/main-layout/main-layout.component';
 import { MaterialModule } from 'src/app/core/modules/material.module';
 import { AuthService } from 'src/app/core/services/auth.service';
+import { ListingService } from './core/services/listing.service';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { AuthService } from 'src/app/core/services/auth.service';
   ],
   providers: [
     AuthService,
+    ListingService
   ],
   bootstrap: [AppComponent]
 })

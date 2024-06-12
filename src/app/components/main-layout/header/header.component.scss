@@ -7,4 +7,9 @@
 mat-toolbar{
   background-color: $bg-header;
   color: #fff;
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 15px;
+  }
 }

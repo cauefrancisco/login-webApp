@@ -1,30 +1,30 @@
 @import './../../../styles/main.scss';
 
-.btn-container{
-  margin: 0;
-  justify-content: right;
-  @media (max-width: 480px) {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+
+main{
+  min-height: 85vh;
+}
+
+.text{
+  text-align: center;
+  span{
+    color: red;
   }
 }
 
-.btn-confirm{
-  height: 6vh;
-  border-radius: 5px;
-  color: #fff;
-  background: $bg-header;
-  border: 1px solid black;
-  @media (max-width: 480px) {
-    margin-bottom: 1rem;
-  }
+table{
+  display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
 }
 
-.btn-back{
-  height: 6vh;
-  border-radius: 5px;
-  color: black;
-  background: transparent;
-  border: 1px solid black;
+.mat-mdc-table .mat-mdc-header-cell {
+  background: inherit;
+  min-width: 180px;
+}
+
+.mat-mdc-table tbody, .mat-mdc-table tfoot, .mat-mdc-table thead, .mat-mdc-cell, .mat-mdc-footer-cell, .mat-mdc-header-row, .mat-mdc-row, .mat-mdc-footer-row, .mat-mdc-table .mat-mdc-header-cell{
+  min-width: 180px !important;
 }

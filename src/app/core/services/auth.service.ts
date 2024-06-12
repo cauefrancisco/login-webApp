@@ -13,19 +13,27 @@ import { ISession } from '../interfaces/session.interface';
 export class AuthService {
 
   public storage: Storage;
-
+  public userIdentified!: boolean;
   public ID_SESSION!: string;
   public SignatureSession!: string;
+  public userNameDisplay: string;
 
   constructor(
     private _httpClient: HttpClient,
   ) {
     this.storage = window.localStorage;
+    this.userNameDisplay = '';
   }
 
   public getServerNonce(userName: string): Observable<any> {
     const url = `http://test.ficusconsultoria.com.br:11118/retaguarda_prospect/aaaa/auth?UserName=${userName}`;
     return this._httpClient.get(url);
+  }
+
+  public getUserNameForDisplay(user: string): string {
+    console.log('this.userNameDisplay', this.userNameDisplay)
+    console.log('user', user)
+    return this.userNameDisplay = user;
   }
 
   public getClientNonce(dateHour: string): string {
@@ -83,6 +91,15 @@ export class AuthService {
   public getCompanyList(signatureSession: string): Observable<any> {
     const url = `http://test.ficusconsultoria.com.br:11118/retaguarda_prospect/aaaa/empresaService/PegarEmpresasFavoritas?session_signature=${signatureSession}`;
     return this._httpClient.get(url);
+  }
+
+  public isLogged(userLoggedIn: boolean): boolean {
+    this.userIdentified = userLoggedIn;
+    if (this.userIdentified) {
+      return true
+
+    }
+    return false;
   }
 
 }

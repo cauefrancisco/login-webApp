@@ -1,0 +1,23 @@
+
+// material inputs
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: unset;
+  &:focus{
+    background-color: unset;
+  }
+}
+
+
+.mat-mdc-text-field-wrapper .mdc-text-field .ng-tns-c1205077789-0 .mdc-text-field--filled {
+  width: 250px !important;
+}
+
+.mat-mdc-text-field-wrapper {
+  min-width: 250px;
+  width: 100%;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent !important;
+}

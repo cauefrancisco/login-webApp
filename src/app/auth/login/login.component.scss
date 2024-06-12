@@ -1,0 +1,75 @@
+@import './../../../styles/main.scss';
+
+.mat-form-field-appearance-fill .mat-form-field-flex{
+
+  background: none !important;
+  
+  }
+
+  main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../assets/bussiness.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-input-card{
+    margin: 5vw auto;
+    width: 35vw;
+    height: 65vh;
+    text-align: center;
+    box-shadow: 4px -4px 9px 2px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+
+    @media (max-width: 480px) {
+      margin: 10vw auto;
+      width: 85vw;
+      height: 73vh;
+    }
+
+    .title-container{
+      border-radius: 0 0 50% 50%;
+      height: calc(132px - 1rem);
+      // color: #fff;
+      margin-bottom: 2rem;
+    }
+
+    .container-login{
+      justify-content: center;
+    }
+  }
+
+  .btn-container{
+    margin: 0;
+    justify-content: center;
+    @media (max-width: 480px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  
+  .btn-confirm{
+    height: 6vh;
+    border-radius: 5px;
+    color: #fff;
+    background: $bg-header;
+    border: 1px solid black;
+    @media (max-width: 480px) {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .btn-back{
+    height: 6vh;
+    border-radius: 5px;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+  }

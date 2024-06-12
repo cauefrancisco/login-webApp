@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+.mat-mdc-fab.mat-accent, .mat-mdc-mini-fab.mat-accent {
+  background-color: $sweet-blue;
+  // --mdc-fab-icon-color: #fff;
+  // --mat-mdc-fab-color: #fff;
+}

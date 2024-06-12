@@ -1,0 +1,21 @@
+@import '../../../../styles/main.scss';
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2vh 0;
+  background-color: $bg-header;
+    p{
+      font-size: 0.6rem;
+      color: #fff;
+
+      @media (max-width:480px) {
+        p{
+          font-size: 0.2rem !important;
+        }
+      }
+    }
+}

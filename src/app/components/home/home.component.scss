@@ -1,0 +1,30 @@
+@import './../../../styles/main.scss';
+
+.btn-container{
+  margin: 0;
+  justify-content: right;
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.btn-confirm{
+  height: 6vh;
+  border-radius: 5px;
+  color: #fff;
+  background: $bg-header;
+  border: 1px solid black;
+  @media (max-width: 480px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.btn-back{
+  height: 6vh;
+  border-radius: 5px;
+  color: black;
+  background: transparent;
+  border: 1px solid black;
+}

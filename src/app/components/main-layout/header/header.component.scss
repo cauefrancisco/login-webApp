@@ -1,0 +1,10 @@
+@import './../../../../styles/main.scss';
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-toolbar{
+  background-color: $bg-header;
+  color: #fff;
+}

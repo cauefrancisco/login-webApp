@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, 
+body{
+  margin: 0 auto;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+.mat-h1, .mat-headline-5, .mat-typography .mat-h1, .mat-typography .mat-headline-5, .mat-typography h1,
+.mat-h2, .mat-headline-6, .mat-typography .mat-h2, .mat-typography .mat-headline-6, .mat-typography h2 {
+  letter-spacing: 2px;
+  font-weight: 700;
+  // font-family: 'Indie Flower', cursive;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+p{
+  letter-spacing: 2px;
+  line-height: 2;
+  font-weight: 600;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+

@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
   public clientNonce!: string;
   public encryptedPassword!: string;
   public hash = sha256.create();
+  public errorMessage = '';
 
   constructor(
     private _formBuilder: FormBuilder,
@@ -95,13 +96,16 @@ export class LoginComponent implements OnInit {
 
     this._authService.doLogin(loginPayload).subscribe((res: ISession) => {
       if (res && res.result.length > 0) {
-        this.loggedIn = true;
-        this._authService.isLogged(this.loggedIn);
         this._authService.getUserNameForDisplay(res.logondisplay);
         const SIGNATURE_SESSION = this._authService.getSignatureSession(res, this.F_password.value);
 
         this._authService.getCompanyList(SIGNATURE_SESSION).subscribe((res: any) => {
+          if (!res.result || res.result.length <= 0) {
+            return;
+          }
           this._listingService.getDataSource(res.result);
+          this.loggedIn = true;
+          this._authService.isLogged(this.loggedIn);
           this.goTo('home');
         })
       }

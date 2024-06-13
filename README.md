@@ -1,6 +1,6 @@
   <section>
     <h4>Este projeto é um case, que tem como objetivo desenvolver um fluxo de login e uma listagem de dados</h4>
-    <p>Abaixo você encontra uma explicação ampla sobre o funcionamento do projeto e sua estrutura</p>
+    <p>Abaixo você encontra mais informações sobre o funcionamento do projeto e sua estrutura</p>
     <br>
     <hr>
   </section>

@@ -2,6 +2,7 @@
 
 main{
   min-height: 85vh;
+  margin-left: 1rem;
 
   mat-icon {
     margin: 2rem;
@@ -18,5 +19,13 @@ main{
 
   .main-content{
     height: 100%;
+  }
+
+  .warning {
+
+    span{
+      font-weight: 600;
+      font-size: calc(1rem - 0.2rem);
+    }
   }
 }

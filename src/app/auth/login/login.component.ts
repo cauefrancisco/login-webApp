@@ -99,6 +99,7 @@ export class LoginComponent implements OnInit {
         this._authService.isLogged(this.loggedIn);
         this._authService.getUserNameForDisplay(res.logondisplay);
         const SIGNATURE_SESSION = this._authService.getSignatureSession(res, this.F_password.value);
+
         this._authService.getCompanyList(SIGNATURE_SESSION).subscribe((res: any) => {
           this._listingService.getDataSource(res.result);
           this.goTo('home');

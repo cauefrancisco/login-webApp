@@ -1,11 +1,11 @@
   <section>
-    <h4>Este projeto é um case, que tem como objetivo desenvolver um fluxo de login e uma listagem de dados</h4>
+    <h4>Este projeto é um case, que tem como objetivo exibir um fluxo de login e uma listagem de dados</h4>
     <p>Abaixo você encontra mais informações sobre o funcionamento do projeto e sua estrutura</p>
     <br>
     <hr>
   </section>
 
-### Quais dependências NPM estão sendo usadas no projeto?
+### Dependências NPM
 
 <ul>
   <li>
@@ -32,7 +32,7 @@ https://ng-bootstrap.github.io/#/getting-started
 
 </ul>
 
-### Como Rodar este projeto?
+### Como Rodar localmente?
 
 <ul> 
   <li> 
@@ -50,7 +50,28 @@ https://ng-bootstrap.github.io/#/getting-started
 </ul>
 Qualquer dúvida entrar em contato por email ou whatssapp.
 
+####  Sobre o fluxo
+
+    <ul>
+
+      <li class="mb-3">
+        1 - Tela de Login
+      </li>
+      <p>
+        Usuário: aaaa <br>
+        Senha: 123456
+        <br>
+      </p>
+      <br>
+      <li class="mb-3">
+        2 - Listagem
+      </li>
+      <p>
+        Listagem retorna muitos parâmetros e apenas alguns foram exibidos na tabela, sendo possível a qualquer momento acrescentar ou retirar.
+      </p>
+    </ul>
+  
+
 
 
   </section>
-</main>

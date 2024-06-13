@@ -17,9 +17,8 @@ mat-toolbar{
 .menu-side{
   z-index: 2;
   position: absolute;
-  // top: 0.5px;
   min-height: 90vh;
-  width: 20vw;
+  width: 20rem;
   background-color: #1c1c63;
 
   @media (max-width: 480px) {

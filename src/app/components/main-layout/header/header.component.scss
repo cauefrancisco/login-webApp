@@ -13,3 +13,42 @@ mat-toolbar{
     margin-top: 15px;
   }
 }
+
+.menu-side{
+  z-index: 2;
+  position: fixed;
+  min-height: 100vh;
+  width: 20vw;
+  background-color: #1c1c63;
+
+  @media (max-width: 480px) {
+    width: 100vw;
+  }
+
+  mat-icon{
+    color: #fff;
+  }
+
+  ul{
+    padding-top: 32px;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    font-size: 30px;
+      li{
+        width: 80%;
+
+        &:hover{
+          background-color: rgba(28,28,99, 0.2);
+          border-bottom: 1px solid #fff;
+        }
+        a{
+          color: white;
+          text-decoration: none;
+          // &:hover{
+          //   border-bottom: 1px solid #fff;
+          // }
+      }
+    }
+  }
+}

@@ -36,7 +36,6 @@ export class HomeComponent implements OnInit, AfterContentChecked {
   ) { }
 
   ngOnInit() {
-    console.log('dataSource home component', this.dataSource);
   }
 
   ngAfterContentChecked() {

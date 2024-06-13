@@ -15,11 +15,9 @@ export class AuthGuard {
 
   canActivate(): boolean {
     if (this._authService.userIdentified) {
-      console.log('entrou positivo', this._authService.userIdentified)
       return true;
     }
     this._router.navigateByUrl('login');
-    console.log('entrou negativo', this._authService.userIdentified)
     return false;
   };
 }

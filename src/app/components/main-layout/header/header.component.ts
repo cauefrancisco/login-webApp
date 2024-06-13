@@ -9,7 +9,7 @@ import { AuthService } from 'src/app/core/services/auth.service';
 })
 export class HeaderComponent implements OnInit, AfterContentChecked {
 
-  public hidden!: boolean;
+  public hidden: boolean = false;
   public userName = '';
   public isLogged!: boolean;
 
@@ -21,9 +21,9 @@ export class HeaderComponent implements OnInit, AfterContentChecked {
   }
 
   ngOnInit() {
-    setInterval(() => {
-      this.hidden = !this.hidden;
-    }, 2000);
+    // setInterval(() => {
+    //   this.hidden = !this.hidden;
+    // }, 2000);
   }
 
   ngAfterContentChecked(): void {
@@ -31,8 +31,8 @@ export class HeaderComponent implements OnInit, AfterContentChecked {
     this.isLogged = this._authService.userIdentified;
   }
 
-  public toggle(): void {
-    this.hidden = !this.hidden;
+  public toggle(): boolean {
+    return this.hidden = !this.hidden;
 
   }
 

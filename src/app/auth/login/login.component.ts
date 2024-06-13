@@ -70,7 +70,6 @@ export class LoginComponent implements OnInit {
 
     this._authService.getServerNonce(this.F_user.value).subscribe((res: IServerNonce) => {
       this.systemNonce = res.result;
-      console.log('systemNonce', this.systemNonce);
       if (this.systemNonce.length > 0) {
         this.doLogin();
       }
@@ -79,7 +78,6 @@ export class LoginComponent implements OnInit {
 
   public doLogin(): void {
     this.clientNonce = sha256(moment().toISOString());
-    console.log('Client Nonce: ', moment().toISOString() + ' -> ' + this.clientNonce);
 
     const passwordEncryptionPayload = {
       password: this.F_password.value,
@@ -102,7 +100,6 @@ export class LoginComponent implements OnInit {
         this._authService.getUserNameForDisplay(res.logondisplay);
         const SIGNATURE_SESSION = this._authService.getSignatureSession(res, this.F_password.value);
         this._authService.getCompanyList(SIGNATURE_SESSION).subscribe((res: any) => {
-          console.log('result', res);
           this._listingService.getDataSource(res.result);
           this.goTo('home');
         })

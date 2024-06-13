@@ -1,6 +1,7 @@
 <mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+    (click)="toggle()">
+    <mat-icon>{{ hidden ? 'menu_open' : 'menu' }}</mat-icon>
   </button>
   <span class="example-spacer"></span>
   <p *ngIf="isLogged">user: <span> {{userName}} </span></p>
@@ -9,3 +10,12 @@
     <mat-icon>logout</mat-icon>
   </button>
 </mat-toolbar>
+
+<section *ngIf="hidden" class="menu-side">
+  <ul>
+    <li>
+      <mat-icon>local_library</mat-icon>
+      <a href=""> Sobre</a>
+    </li>
+  </ul>
+</section>

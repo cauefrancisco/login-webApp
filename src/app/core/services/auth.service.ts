@@ -31,8 +31,6 @@ export class AuthService {
   }
 
   public getUserNameForDisplay(user: string): string {
-    console.log('this.userNameDisplay', this.userNameDisplay)
-    console.log('user', user)
     return this.userNameDisplay = user;
   }
 
@@ -70,10 +68,6 @@ export class AuthService {
     const hashSaltPassword = sha256(saltPassword);
 
     const PRIVATE_KEY = crc32(hashSaltPassword, crc32Session);
-    console.log('PRIVATE_KEY', PRIVATE_KEY);
-
-    // “retaguarda_prospect/aaaa/empresaService/PegarEmpresasFavoritas” Path Request
-
 
     const date = new Date;
     const timeStamp = date.getTime();

@@ -48,29 +48,6 @@ https://ng-bootstrap.github.io/#/getting-started
 4 - O Projeto deve abrir no localhost:4200, acessar localhost pelo navegador;
   </li>
 </ul>
-Qualquer dúvida entrar em contato por email ou whatssapp.
-
-####  Sobre o fluxo
-
-    <ul>
-
-      <li class="mb-3">
-        1 - Tela de Login
-      </li>
-      <p>
-        Usuário: aaaa <br>
-        Senha: 123456
-        <br>
-      </p>
-      <br>
-      <li class="mb-3">
-        2 - Listagem
-      </li>
-      <p>
-        Listagem retorna muitos parâmetros e apenas alguns foram exibidos na tabela, sendo possível a qualquer momento acrescentar ou retirar.
-      </p>
-    </ul>
-  
 
 
 

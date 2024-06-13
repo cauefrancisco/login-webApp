@@ -1,27 +1,56 @@
-# LoginWebApp
+  <section>
+    <h4>Este projeto é um case, que tem como objetivo desenvolver um fluxo de login e uma listagem de dados</h4>
+    <p>Abaixo você encontra uma explicação ampla sobre o funcionamento do projeto e sua estrutura</p>
+    <br>
+    <hr>
+  </section>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+### Quais dependências NPM estão sendo usadas no projeto?
 
-## Development server
+<ul>
+  <li>
+      1 -  js-sha256
+     https://www.npmjs.com/package/js-sha256
+  </li>
+    <li>
+     2 - crc
+https://www.npmjs.com/package/crc
+  </li>
+  <li>
+     3 - moment Js
+https://www.npmjs.com/package/moment
+  </li>
+  <li>
+      4 - Angular Material
+https://material.angular.io/guide/getting-started
+  <li>
+     5 - Bootstrap
+https://ng-bootstrap.github.io/#/getting-started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  </li>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+</ul>
 
-## Build
+### Como Rodar este projeto?
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<ul> 
+  <li> 
+1 - clonar repositório, abrir pasta no VSCode ou no editor de código da sua preferência.
+  </li>
+  <li>
+2 - No CMD, rodar comando 'npm i' para instalar as dependências do projeto. (Se certificar que você tem o node.js instalado globalmente)
+  </li>
+  <li>
+3 - Após a instalação das dependências, rodar comando 'ng serve' no cmd, dentro do VSCode, no diretório do projeto angular.
+  </li>
+  <li>
+4 - O Projeto deve abrir no localhost:4200, acessar localhost pelo navegador;
+  </li>
+</ul>
+Qualquer dúvida entrar em contato por email ou whatssapp.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  </section>
+</main>

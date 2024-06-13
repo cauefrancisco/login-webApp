@@ -45,7 +45,7 @@ https://ng-bootstrap.github.io/#/getting-started
 3 - Após a instalação das dependências, rodar comando 'ng serve' no cmd, dentro do VSCode, no diretório do projeto angular.
   </li>
   <li>
-4 - O Projeto deve abrir no localhost:4000, acessar localhost pelo navegador;
+4 - O Projeto deve abrir no localhost:4200, acessar localhost pelo navegador;
   </li>
 </ul>
 Qualquer dúvida entrar em contato por email ou whatssapp.

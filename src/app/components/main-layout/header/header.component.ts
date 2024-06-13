@@ -21,9 +21,6 @@ export class HeaderComponent implements OnInit, AfterContentChecked {
   }
 
   ngOnInit() {
-    // setInterval(() => {
-    //   this.hidden = !this.hidden;
-    // }, 2000);
   }
 
   ngAfterContentChecked(): void {
@@ -35,10 +32,14 @@ export class HeaderComponent implements OnInit, AfterContentChecked {
     return this.hidden = !this.hidden;
 
   }
+  public goTo(page: string): void {
+    this._router.navigateByUrl(page);
+  }
 
   public logout(): void {
     this._authService.userIdentified = false;
-    this._router.navigateByUrl('login');
+    this.goTo('login');
   }
+
 
 }

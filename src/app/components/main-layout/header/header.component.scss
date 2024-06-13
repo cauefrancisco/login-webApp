@@ -16,8 +16,9 @@ mat-toolbar{
 
 .menu-side{
   z-index: 2;
-  position: fixed;
-  min-height: 100vh;
+  position: absolute;
+  // top: 0.5px;
+  min-height: 90vh;
   width: 20vw;
   background-color: #1c1c63;
 
@@ -33,16 +34,20 @@ mat-toolbar{
     padding-top: 32px;
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: left;
-    font-size: 30px;
+    font-size: 28px;
       li{
         width: 80%;
-
+        padding: 6px;
+        margin-bottom: 10px;
+        cursor: pointer;
         &:hover{
           background-color: rgba(28,28,99, 0.2);
           border-bottom: 1px solid #fff;
         }
         a{
+          font-weight: 300;
           color: white;
           text-decoration: none;
           // &:hover{

@@ -13,9 +13,13 @@
 
 <section *ngIf="hidden" class="menu-side">
   <ul>
-    <li>
+    <li (click)="goTo('home')">
+      <mat-icon>home</mat-icon>
+      <a> Início</a>
+    </li>
+    <li (click)="goTo('about')">
       <mat-icon>local_library</mat-icon>
-      <a href=""> Sobre</a>
+      <a> Sobre</a>
     </li>
   </ul>
 </section>

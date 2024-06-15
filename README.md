@@ -1,11 +1,11 @@
   <section>
-    <h4>Este projeto é um case, que tem como objetivo desenvolver um fluxo de login e uma listagem de dados</h4>
+    <h4>Este projeto é um case, que tem como objetivo exibir um fluxo de login e uma listagem de dados</h4>
     <p>Abaixo você encontra mais informações sobre o funcionamento do projeto e sua estrutura</p>
     <br>
     <hr>
   </section>
 
-### Quais dependências NPM estão sendo usadas no projeto?
+### Dependências NPM
 
 <ul>
   <li>
@@ -32,7 +32,7 @@ https://ng-bootstrap.github.io/#/getting-started
 
 </ul>
 
-### Como Rodar este projeto?
+### Como Rodar localmente?
 
 <ul> 
   <li> 
@@ -48,9 +48,7 @@ https://ng-bootstrap.github.io/#/getting-started
 4 - O Projeto deve abrir no localhost:4200, acessar localhost pelo navegador;
   </li>
 </ul>
-Qualquer dúvida entrar em contato por email ou whatssapp.
 
 
 
   </section>
-</main>
